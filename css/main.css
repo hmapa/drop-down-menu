@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav_li{
+    float: left;
+    display: block;
+    background: #3e3e3e;
+    color: white;
+    position: relative;
+}
+.nav_link{
+    display: block;
+    padding: 15px 20px;
+}
+.nav_link, .nav_sub-link{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.nav_sub-link{
+    padding: 10px;
+    display: block;
+}
+.nav_sub-ul{
+    position: absolute;
+    display: none;
+}
+.nav_sub-li{
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+.nav_li:hover .nav_sub-ul{
+    display: block;
+    min-width: 100%;
+    background: #777;
+    top: 100%;
+    left: 0;
+}
